@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Moster Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+        <div class="w-1/2 mx-auto text-center font-bold my-5">
+            <div class="bg-violet-500 p-5 rounded">
+                <h3 class="text-white text-4xl">Income</h3><br>
+                <p class="text-white text-2xl">Income</p>
+                <input class="text-center" id="income-field" type="number" value="0">
+            </div>
+            <br>
+            <div class="bg-sky-700 p-5 rounded">
+                <h3 class="text-white text-4xl">Expenses</h3><br>
+                <p class="text-white text-2xl">Food</p>
+                <input class="text-center" id="food-field" type="number" value="0">
+                <p class="text-white text-2xl">Rent</p>
+                <input class="text-center" id="rent-field" type="number" value="0">
+                <p class="text-white text-2xl">Clothes</p>
+                <input class="text-center" id="cloths-field" type="number" value="0">
+            </div>
+            <br>
+            <div class="bg-yellow-500 p-5 rounded">
+                <button id="btn-calculate" class="px-7 py-2 bg-green-800 text-white rounded">Calculate</button>
+            </div>
+            <br>
+            <div class="bg-pink-800 p-5 rounded">
+                <h3 class="text-white text-4xl">Total Expenses : <span id="expenses-id">00</span></h3>
+                <h3 class="text-white text-4xl">Balance : <span id="balance-id">00</span></h3>
+            </div>
+            <br>
+            <div class="bg-violet-800 p-5 rounded">
+                <h3 class="text-white text-4xl">Save</h3>
+                <input class="text-center" id="save-field" type="number" value="0"> <span class="text-white">%</span>
+                <button id="btn-save" class="px-7 py-2 bg-green-800 text-white rounded">Save</button>
+            </div>
+            <br>
+            <div class="bg-teal-700 p-5 rounded">
+                <h3 class="text-white text-4xl">Saving Amount : <span id="save-id">00</span></h3>
+                <h3 class="text-white text-4xl">Remaining Balance : <span id="remaining-id">00</span></h3>
+            </div>
+       </div>
+    <script src="app.js"></script>
+</body>
+</html>
